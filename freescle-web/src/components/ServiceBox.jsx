@@ -2,7 +2,7 @@ import React from "react";
 
 const ServiceBox = ({ name, icon }) => {
     return (
-        <div className="relative flex items-center justify-between bg-gray-100 rounded-lg py-6 px-2 shadow-lg overflow-hidden">
+        <div className="relative flex items-center justify-between bg-gray-100 rounded-lg py-6 px-2 shadow-lg overflow-hidden w-[80%] sm:w-[80%] md:w-[90%] ">
             {/* Left Side - Service Name */}
             <span className="text-xl font-semibold text-gray-800">{name}</span>
 

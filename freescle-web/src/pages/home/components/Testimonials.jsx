@@ -1,4 +1,3 @@
-import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -52,7 +51,7 @@ const Testimonial = () => {
     };
 
     return (
-        <div className="max-w-6xl mx-auto px-6 py-12">
+        <div className="w-full sm:max-w-4xl md:max-w-6xl md:mx-auto px-6 py-12">
             {/* Testimonials Carousel */}
             <h2 className="text-3xl text-white text-left font-bold text-center mb-8">What Our Clients Say</h2>
             <Slider {...settings}>
@@ -63,7 +62,7 @@ const Testimonial = () => {
                                 <div className="text-3xl">{testimonial.companyLogo}</div>
                                 <h3 className="text-lg font-semibold">{testimonial.companyName}</h3>
                             </div>
-                            <p>"{testimonial.review}"</p>
+                            <p>{testimonial.review}</p>
                             <div className="mt-4">
                                 <div className="flex justify-center">
                                     {[...Array(5)].map((_, i) => (

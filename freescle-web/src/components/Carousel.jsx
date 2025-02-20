@@ -9,7 +9,7 @@ const Carousel = ({ clients, settings }) => {
             <Slider {...settings}>
                 {clients.map((client, index) => (
                     <div key={index} className="px-4">
-                        <div className="bg-white shadow-lg rounded-lg p-6 flex justify-center items-center h-40 transform transition-all hover:scale-105">
+                        <div className="w-[100%] bg-white shadow-lg rounded-lg p-6 flex justify-center items-center h-40 transform transition-all hover:scale-105">
                             <img src={client.logo} alt={client.name} className="h-20 w-auto" />
                         </div>
                     </div>
