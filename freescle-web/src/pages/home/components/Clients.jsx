@@ -1,5 +1,3 @@
-import React from "react";
-import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Carousel from "../../../components/Carousel";
@@ -25,13 +23,13 @@ const Clients = () => {
         cssEase: "linear",     // Smooth animation
         responsive: [
             { breakpoint: 1024, settings: { slidesToShow: 3 } },
-            { breakpoint: 768, settings: { slidesToShow: 2 } },
-            { breakpoint: 480, settings: { slidesToShow: 1 } },
+            { breakpoint: 750, settings: { slidesToShow: 2 } },
+            { breakpoint: 440, settings: { slidesToShow: 1 } },
         ],
     };
 
     return (
-        <div className="max-w-6xl mx-auto px-6 py-12">
+        <div className="w-[100%] sm:max-w-4xl md:max-w-6xl md:mx-auto px-6 py-12">
             <h2 className="text-3xl font-bold text-center mb-8 text-left">Our Clients</h2>
             {/* <Slider {...settings}>
                 {clients.map((client, index) => (

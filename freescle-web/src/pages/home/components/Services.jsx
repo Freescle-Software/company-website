@@ -14,9 +14,9 @@ const services = [
 
 function Services() {
     return (
-        <div className="max-w-6xl mx-auto px-6 py-12">
-            <h2 className="text-3xl font-bold text-center mb-8 text-left">Our Services</h2>
-            <div className="grid grid-cols-3 md:grid-cols-3 gap-6">
+        <div className="w-full sm:max-w-4xl md:max-w-6xl md:mx-auto  px-6 py-12">
+            <h2 className=" text-5xl md:text-3xl font-bold text-center mb-8 md:text-left ">Our Services</h2>
+            <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 place-items-center place-content-center gap-6">
                 {services.map((service, index) => (
                     <ServiceBox key={index} name={service.name} icon={service.icon} />
                 ))}
