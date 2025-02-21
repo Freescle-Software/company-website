@@ -8,6 +8,9 @@
   color-scheme: light dark;
   color: rgba(255, 255, 255, 0.87);
   background-color: #242424;
+  /*background: url("https://res.cloudinary.com/dnkhpkpy4/image/upload/v1740159261/space_srdi0m.png") no-repeat center center fixed;*/
+  /*background-size: auto;*/
+
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -28,6 +31,8 @@ body {
   margin: 0;
   display: flex;
   place-items: center;
+  overflow-x:hidden;
+  width: 100vw;
   min-width: 320px;
   min-height: 100vh;
 }
@@ -48,6 +53,31 @@ button {
   cursor: pointer;
   transition: border-color 0.25s;
 }
+
+#footer-button{
+  border-radius: 100%;
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #573084;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+
+input{
+  border: 1px solid transparent;
+  padding: 0.6em 1.2em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #ffffff;
+  cursor: text;
+  transition: border-color 0.25s;
+}
+
 button:hover {
   border-color: #646cff;
   scale: 102%;
