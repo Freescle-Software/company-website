@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from "react-router-d
 import { Suspense, lazy } from "react";
 import "./App.css";
 import Header from "./components/Header.jsx";
+import Footer from "./components/Footer.jsx";
 const Home = lazy(() => import("./pages/home/index"));
 const Login = lazy(() => import("./pages/login"));
 const Signup = lazy(() => import("./pages/signup"));
@@ -17,6 +18,7 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
         </Routes>
+        <Footer/>
       </Suspense>
     </Router>
   );

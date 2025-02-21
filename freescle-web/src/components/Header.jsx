@@ -6,7 +6,7 @@ import {useState} from "react";
 const Navlinks = () => {
     return (
         <div
-            className=" *:text-black *:border-solid *:border-black *:border-b-2 *:w-[80%] *:hover:bg-black *:hover:border-purple-600 *:hover:shadow-xs *:hover:shadow-purple-600 *:hover:text-white *:hover:transition *:hover:duration-1000 *:hover:ease-in-out md:*:w-auto  md:*:border-none w-full justify-center items-center *:rounded-xl *:p-4 *:flex *:items-center *:m-2  md:*:m-4 md:*:h-auto md:items-center flex flex-col md:flex-row md:justify-center">
+            className=" *:text-black *:border-solid *:border-black *:border-b-2 *:w-[80%] *:hover:bg-black *:hover:border-purple-600 *:hover:shadow-xs *:hover:shadow-purple-600 *:hover:text-white *:hover:transition *:hover:duration-700 *:hover:ease-in-out md:*:w-auto  md:*:border-none w-full justify-center items-center *:rounded-full *:p-4 *:flex *:items-center *:m-2  md:*:m-4 md:*:h-auto md:items-center flex flex-col md:flex-row md:justify-center *:font-serif">
             <Link to="/">Home</Link>
             <Link to="/services">Services</Link>
             <Link to="/findsolutions">Our clients</Link>
@@ -30,14 +30,14 @@ const Header = () => {
                     <Link to="/" className="text-black flex place-items-center">
                         <img src="https://res.cloudinary.com/dnkhpkpy4/image/upload/v1732113691/Frame_4_dueadi.png"
                              className="w-[40px] h-[40px] md:w-[50px] md:h-[50px] rounded-full"/>
-                        <p className="px-2">Freescle Software</p>
+                        <p className="px-2 font-serif">Freescle Software</p>
                     </Link>
                 </div>
                 <div className={`${isToggleopen ? "flex" : "hidden"} w-full md:col-2 md:col-span-4 place-content-center place-items-center md:flex`}>
                     <Navlinks />
                 </div>
                 <div className="place-content-center place-items-center p-3 m-3 md:p-2 md:m-2">
-                    <button className={`${isToggleopen ? '': 'hidden'} md:flex`}>Contact Us</button>
+                    <button className={`${isToggleopen ? '': 'hidden'} md:flex font-serif`}>Contact Us</button>
                     <HiBars3 onClick={handleToggle} className={`absolute top-5 mr-3 md:top-4 right-0 md:mr-6 col-6 place-content-center ${isToggleopen ? 'hidden': ''} hover:cursor-pointer md:hidden text-black text-3xl`} />
                     <RxCross2 onClick={handleToggle} className={`absolute top-5 mr-3 md:top-4 right-0 md:mr-6 col-6 place-content-center ${isToggleopen ? '': 'hidden'} hover:cursor-pointer md:hidden text-black text-3xl`} />
                 </div>
